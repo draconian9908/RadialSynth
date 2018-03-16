@@ -16,17 +16,14 @@ We successfully created a screen that the user can interact with using their mou
 - Shape buttons (circle and square): changes the mark that will be placed on the grid to the corresponding shape
 
 ![alt text](https://github.com/draconian9908/RadialSynth/blob/master/RadialSynth_Start.jpg)
-
 *The initial screen, clean of marks, with the grid and buttons.*
 
 ![alt text](https://github.com/draconian9908/RadialSynth/blob/master/RadialSynth_Marked.png)
-
 *The screen with marks, no sound currently playing*
 
 We have also successfully integrated sound playback. After placing marks in the grid, the user clicks on the Play Button to change the cursor function, then clicks anywhere in the grid they want. The program looks at the grid spaces around where the user clicked in rings of increasing size, and plays a corresponding sound for each mark that lies on the current ring. Color determines instrument, hue determines note/pitch, and shape determines whether the note is short or sustained.
 
 ![alt text](https://github.com/draconian9908/RadialSynth/blob/master/RadialSynth_SoundRing.png)
-
 *The screen with marks, currently playing sound. Light gray 'ring' is the ring currently playing sound.*
 
 ## Implementation
