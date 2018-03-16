@@ -30,7 +30,7 @@ We have also successfully integrated sound playback. After placing marks in the 
 
 We took the approach of creating multiple of our own classes in Python:
 
-![alt text]()
+![alt text](UML_diagram.png)
 *Our UML Class Diagram*
 
 The classes we created and used are:
