@@ -27,3 +27,23 @@ We have also successfully integrated sound playback. After placing marks in the 
 *The screen with marks, currently playing sound. Light gray 'ring' is the ring currently playing sound.*
 
 ## Implementation
+
+We took the approach of creating multiple of our own classes in Python:
+
+![alt text]()
+*Our UML Class Diagram*
+
+The classes we created and used are:
+- Grid: initialize screen, initialize objects using other custom classes, draw grid, buttons, and markers, implement main loop that runs everything.
+- Block: creates a marker to be placed on the grid, defines the attributes of the marker that makes it a note
+- Cell: creates a cell in the grid where a marker (Block) can be placed
+- Button: creates a button based on the given attributes
+- Sweeper: creates the rings, stores the blocks, translates blocks to notes, and plays sound based on the note attributes
+
+We used `Pygame` to create the screen as well as to create the grid, markers, buttons, and rings, and to allow for user interaction through the mouse. We then used `fluidsynth` to play sound from some .sf2 files we have in a folder and loaded in.
+
+The code that actually runs the program is defined in the `Grid` class as a function called `main_loop`. This initializes a number of variables so that the user can start interacting with the grid immediately, without having to click on a button, and then starts updating the screen. In the update loop, the program checks the mouse position and whether or not a button is being pressed; if the mouse is over a button, the click causes a change to some variables as defined by the update loop (the update loop is where the function of each button is programmed), and if the mouse is over the grid, the click either places a marker based on the current values of the variables or begins to sweep rings and play sound.
+
+When it came to designing the program, we had to deviate slightly from our original goal. Originally, the user would have been able to interact with each pixel on the screen, so that they could create actual drawings. However, that was a bit beyond the scope of our two week project, so we opted to create a grid and have the user interact with each cell of the grid instead. This limits the extent to which the user can actually 'draw', but it was a lot easier for us to code, so we could focus on other parts of the program and not just the basic drawing function.
+
+## Reflection
