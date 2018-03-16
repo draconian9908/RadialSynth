@@ -4,7 +4,7 @@ This is the homepage for the Olin Spring 2018 Software Design Interactive Progra
 
 ## Overview
 
-We created a program that allows a user to 'draw' on a grid with different shapes and colors, and then play sound based on what they have 'drawn'.
+We created a [program](radialsynth.py) that allows a user to 'draw' on a grid with different shapes and colors, and then play [sound](sound_files/) based on what they have 'drawn'.
 
 ## Results
 
